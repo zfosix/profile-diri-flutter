@@ -34,14 +34,14 @@ class page2 extends StatelessWidget {
               style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(248, 133, 100, 39)),
+                  color: Color.fromRGBO(7, 75, 36, 1)),
             ),
             const SizedBox(height: 20),
 
             Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: const Color.fromARGB(255, 255, 229, 134),
+                color: const Color.fromRGBO(134, 255, 186, 1),
                 borderRadius: BorderRadius.circular(8),
                 boxShadow: [
                   BoxShadow(
@@ -110,11 +110,11 @@ class page2 extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: const Color.fromARGB(255, 255, 229, 134), 
+                color: const Color.fromRGBO(134, 255, 186, 1), 
                 borderRadius: BorderRadius.circular(8),
                 boxShadow: [
                   BoxShadow(
-                    color: const Color.fromARGB(90, 50, 50, 50),
+                    color: const Color.fromARGB(90, 162, 22, 22),
                     blurRadius: 4,
                     offset: Offset(3, 4), 
                   ),
@@ -131,10 +131,9 @@ class page2 extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 20),
-
-                  skillCard('HTML', 0.9),
+                  skillCard('HTML', 0.7),
                   const SizedBox(height: 20),
-                  skillCard('CSS', 0.8),
+                  skillCard('CSS', 0.94),
                   const SizedBox(height: 20),
                   skillCard('JavaScript', 0.85),
                 ],
@@ -146,12 +145,11 @@ class page2 extends StatelessWidget {
     );
   }
 
-  // Widget for skill card with white background
   Widget skillCard(String skill, double level) {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Colors.white, // White background for each skill
+        color: Colors.white, 
         borderRadius: BorderRadius.circular(8),
         boxShadow: [
           BoxShadow(
@@ -177,7 +175,7 @@ class page2 extends StatelessWidget {
           LinearProgressIndicator(
             value: level,
             backgroundColor: Colors.grey[300],
-            color: const Color.fromARGB(255, 111, 74, 0),
+            color: const Color.fromARGB(255, 5, 90, 64),
           ),
         ],
       ),
