@@ -96,14 +96,27 @@ class page2 extends StatelessWidget {
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                        '2022 - Current\n'
+                        'SMK Wikrama Bogor\n\n'
+                        '2019 - 2021\n'
+                        'SMP Negeri 02 Cigombong\n\n'
+                        '2013 - 2019\n'
+                        'SD Negeri 03 Cigombong',
+                    style: TextStyle(
+                      fontSize: 16, // Ukuran font, bisa disesuaikan
+                    ),
                   ),
                   SizedBox(height: 20),
                   Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    'In 2022, I focused on website design using html, css, and javascript technologies until the end of the year.',
+                    style: TextStyle(
+                      fontSize: 16, // Ukuran font, bisa disesuaikan
+                    ),
                   ),
+
                 ],
               ),
+
             ),
             const SizedBox(height: 25),
 
