@@ -13,10 +13,7 @@ class page2 extends StatelessWidget {
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: Colors.grey),
           onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => home()),
-            );
+            Navigator.pop(context);
           },
         ),
       ),
@@ -47,7 +44,7 @@ class page2 extends StatelessWidget {
                   BoxShadow(
                     color: const Color.fromARGB(90, 50, 50, 50),
                     blurRadius: 4,
-                    offset: Offset(3, 4), 
+                    offset: Offset(3, 4),
                   ),
                 ],
               ),
@@ -96,40 +93,38 @@ class page2 extends StatelessWidget {
                   ),
                   SizedBox(height: 8),
                   Text(
-                        '2022 - Current\n'
+                    '2022 - Current\n'
                         'SMK Wikrama Bogor\n\n'
                         '2019 - 2021\n'
                         'SMP Negeri 02 Cigombong\n\n'
                         '2013 - 2019\n'
                         'SD Negeri 03 Cigombong',
                     style: TextStyle(
-                      fontSize: 16, // Ukuran font, bisa disesuaikan
+                      fontSize: 16,
                     ),
                   ),
                   SizedBox(height: 20),
                   Text(
                     'In 2022, I focused on website design using html, css, and javascript technologies until the end of the year.',
                     style: TextStyle(
-                      fontSize: 16, // Ukuran font, bisa disesuaikan
+                      fontSize: 16,
                     ),
                   ),
-
                 ],
               ),
-
             ),
             const SizedBox(height: 25),
 
             Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: const Color.fromRGBO(134, 255, 186, 1), 
+                color: const Color.fromRGBO(134, 255, 186, 1),
                 borderRadius: BorderRadius.circular(8),
                 boxShadow: [
                   BoxShadow(
                     color: const Color.fromARGB(90, 162, 22, 22),
                     blurRadius: 4,
-                    offset: Offset(3, 4), 
+                    offset: Offset(3, 4),
                   ),
                 ],
               ),
@@ -162,7 +157,7 @@ class page2 extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Colors.white, 
+        color: Colors.white,
         borderRadius: BorderRadius.circular(8),
         boxShadow: [
           BoxShadow(
@@ -194,10 +189,4 @@ class page2 extends StatelessWidget {
       ),
     );
   }
-}
-
-void main() {
-  runApp(const MaterialApp(
-    home: page2(),
-  ));
 }
