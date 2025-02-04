@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'main.dart';
 
 class page2 extends StatelessWidget {
-  const page2({Key? key}) : super(key: key);
+  const page2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +20,7 @@ class page2 extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            CircleAvatar(
+            const CircleAvatar(
               radius: 50.0,
               backgroundImage: AssetImage("assets/self.jpeg"),
             ),
@@ -40,17 +39,17 @@ class page2 extends StatelessWidget {
               decoration: BoxDecoration(
                 color: const Color.fromRGBO(134, 255, 186, 1),
                 borderRadius: BorderRadius.circular(8),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
-                    color: const Color.fromARGB(90, 50, 50, 50),
+                    color: Color.fromARGB(90, 50, 50, 50),
                     blurRadius: 4,
                     offset: Offset(3, 4),
                   ),
                 ],
               ),
-              child: Column(
+              child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children: [
                   Text(
                     'About',
                     style: TextStyle(
@@ -75,15 +74,15 @@ class page2 extends StatelessWidget {
                 boxShadow: [
                   BoxShadow(
                     color: Colors.grey.withOpacity(0.5),
-                    offset: Offset(0, 4),
+                    offset: const Offset(0, 4),
                     spreadRadius: 1,
                     blurRadius: 3,
                   ),
                 ],
               ),
-              child: Column(
+              child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children: [
                   Text(
                     'History',
                     style: TextStyle(
@@ -120,9 +119,9 @@ class page2 extends StatelessWidget {
               decoration: BoxDecoration(
                 color: const Color.fromRGBO(134, 255, 186, 1),
                 borderRadius: BorderRadius.circular(8),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
-                    color: const Color.fromARGB(90, 162, 22, 22),
+                    color: Color.fromARGB(90, 162, 22, 22),
                     blurRadius: 4,
                     offset: Offset(3, 4),
                   ),
@@ -162,7 +161,7 @@ class page2 extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: Colors.grey.withOpacity(0.5),
-            offset: Offset(0, 4),
+            offset: const Offset(0, 4),
             spreadRadius: 1,
             blurRadius: 3,
           ),

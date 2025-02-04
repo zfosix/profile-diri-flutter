@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:profile_diri/main.dart';
 import 'package:profile_diri/page3.dart';
 
 void main() {
   testWidgets('Profile app flow test', (WidgetTester tester) async {
-    await tester.pumpWidget(MaterialApp(home: Page3()));
+    await tester.pumpWidget(const MaterialApp(home: Page3()));
 
     expect(find.text('Hello Anda!'), findsOneWidget);
 

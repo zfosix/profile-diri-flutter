@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'main.dart';
 
 class Page3 extends StatefulWidget {
+  const Page3({super.key});
+
   @override
   _Page3State createState() => _Page3State();
 }
@@ -21,14 +23,14 @@ class _Page3State extends State<Page3> with SingleTickerProviderStateMixin {
     super.initState();
     _animationController = AnimationController(
       vsync: this,
-      duration: Duration(milliseconds: 700),
+      duration: const Duration(milliseconds: 700),
     );
     _fadeAnimation = CurvedAnimation(
       parent: _animationController,
       curve: Curves.easeInOut,
     );
 
-    Future.delayed(Duration(milliseconds: 500), () {
+    Future.delayed(const Duration(milliseconds: 500), () {
       setState(() {
         _isFormVisible = true;
       });
@@ -66,15 +68,15 @@ class _Page3State extends State<Page3> with SingleTickerProviderStateMixin {
             child: FadeTransition(
               opacity: _fadeAnimation,
               child: SingleChildScrollView(
-                padding: EdgeInsets.symmetric(horizontal: 15),
+                padding: const EdgeInsets.symmetric(horizontal: 15),
                 child: Card(
                   elevation: 8,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(17),
                   ),
-                  margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                   child: Padding(
-                    padding: EdgeInsets.all(25),
+                    padding: const EdgeInsets.all(25),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
@@ -87,31 +89,31 @@ class _Page3State extends State<Page3> with SingleTickerProviderStateMixin {
                             letterSpacing: 1.9,
                           ),
                         ),
-                        SizedBox(height: 40),
+                        const SizedBox(height: 40),
                         _buildTextInput(
                           hint: 'Username',
                           icon: Icons.person_outline,
                           controller: _usernameController,
                         ),
-                        SizedBox(height: 20),
+                        const SizedBox(height: 20),
                         _buildTextInput(
                           hint: 'Role',
                           icon: Icons.work_outline,
                           controller: _roleController,
                         ),
-                        SizedBox(height: 20),
+                        const SizedBox(height: 20),
                         _buildTextInput(
                           hint: 'School',
                           icon: Icons.school_outlined,
                           controller: _schoolController,
                         ),
-                        SizedBox(height: 20),
+                        const SizedBox(height: 20),
                         _buildTextInput(
                           hint: 'Description',
                           icon: Icons.description_outlined,
                           controller: _descriptionController,
                         ),
-                        SizedBox(height: 30),
+                        const SizedBox(height: 30),
                         ElevatedButton(
                           onPressed: () {
                             Navigator.pushReplacement(
@@ -127,7 +129,7 @@ class _Page3State extends State<Page3> with SingleTickerProviderStateMixin {
                             );
                           },
                           style: ElevatedButton.styleFrom(
-                            minimumSize: Size(double.infinity, 50),
+                            minimumSize: const Size(double.infinity, 50),
                             backgroundColor: Colors.blue,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(12),
@@ -135,7 +137,7 @@ class _Page3State extends State<Page3> with SingleTickerProviderStateMixin {
                             shadowColor: Colors.blueAccent,
                             elevation: 10,
                           ),
-                          child: Text(
+                          child: const Text(
                             'SUBMIT',
                             style: TextStyle(
                               fontSize: 16,
